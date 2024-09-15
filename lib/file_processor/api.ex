@@ -46,18 +46,4 @@ defmodule FileProcessor.Api do
   def list_csv_sources do
     FileProcessor.CsvSourceManager.get_sources()
   end
-
-  # def add_csv_source([]) do
-  #   {:error, :empty_list}
-  # end
-
-  # def add_csv_source(_), do: {:error, :invalid_input}
-
-  # def remove_csv_source(url) when is_binary(url) and byte_size(url) > 0 do
-  #   FileProcessor.CsvSourceManager.remove_source(url)
-  # end
-
-  # def list_csv_sources do
-  #   FileProcessor.CsvSourceManager.get_sources()
-  # end
 end
