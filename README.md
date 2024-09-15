@@ -66,7 +66,19 @@ FileProcessor is an asynchronous and distributed application for processing CSV 
   mix ecto.migrate
 ```
 
-### 5. Start the Application
+### 5.Local Development Setup
+#### Serving CSV Files for Testing
+To simulate a remote file server during development and testing, we use Python's built-in HTTP server. This allows us to serve CSV files locally, mimicking the behavior of fetching files from a remote server.
+* From a new terminal and navigate to the directory containing your test CSV files:
+```
+  cd csv_files_test
+```
+* Start the Python HTTP server
+```
+  python3 -m http.server
+```
+* Your CSV files in the csv_files_test directory are now accessible via http://localhost:8000/. For example, if you have a file named test_data.csv in this directory, it would be accessible at http://localhost:8000/test_data.csv.
+### 6. Start the Application
 ```
   iex -S mix
 ```
@@ -86,13 +98,13 @@ Repeat this step for as many nodes as you want to add, changing the node name ea
 ## Adding CSV Sources
 To add a new CSV source, use the FileProcessor.Api.add_csv_source/1 function:
 ```
-  FileProcessor.Api.add_csv_source("http://example.com/new_csv_source.csv")
+  FileProcessor.Api.add_csv_source("http://localhost:8000/test1.csv")
 ```
 
 ## Removing CSV Sources
 To remove a CSV source, use the FileProcessor.Api.remove_csv_source/1 function:
 ```
-  FileProcessor.Api.remove_csv_source("http://example.com/new_csv_source.csv")
+  FileProcessor.Api.remove_csv_source("http://localhost:8000/test1.csv")
 ```
 
 ## Listing CSV Sources
