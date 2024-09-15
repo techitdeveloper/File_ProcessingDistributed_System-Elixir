@@ -41,7 +41,9 @@ FileProcessor is an asynchronous and distributed application for processing CSV 
 ## 5 Fault Tolerance
 * Automatic restart of failed processes.
 * Handling of network failures and API downtime.
+* Handling of failed processed files.
 * Handling of corrupted files.
+  
 ## Setup Instructions
 ### 1. Clone the repository 
 ```
@@ -89,7 +91,7 @@ To simulate a remote file server during development and testing, we use Python's
 ```
   iex --name node1@127.0.0.1 -S mix
 ```
-### 2. Start first node
+### 2. Start another node
 ```
   iex --name node2@127.0.0.1 -S mix
 ```
