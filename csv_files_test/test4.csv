@@ -1,0 +1,11 @@
+name,revenue,currency,date
+prod1,thousand,USD,2024-09-02
+prod2,876.54,EUR,2024-09-05
+prod3,123.45,JPY,2024-09-05
+prod4,678.90,GBP,2024-09-03
+prod5,543.21,CAD,2024-09-07
+prod6,987.65,USD,,
+prod7,432.10,EUR,2024-09-06
+prod8,765.43,JPY,2024-09-09
+prod9,210.98,GBP,2024-09-04
+prod10,543.21,CAD,2024-09-10

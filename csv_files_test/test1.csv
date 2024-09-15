@@ -1,0 +1,5 @@
+name,revenue,currency,date,category,region
+prod1,345.23,USD,2024-09-02,A,North
+prod2,876.54,EUR,2024-09-05,B,South
+prod3,123.45,JPY,2024-09-08,C,East
+prod4,678.90,GBP,2024-09-03,A,West

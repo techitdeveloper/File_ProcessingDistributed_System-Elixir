@@ -1,0 +1,9 @@
+name,revenue,currency,date,sales_rep
+prod11,1345.23,USD,2024-09-02,John Doe
+prod12,1876.54,EUR,2024-09-05,Jane Smith
+prod13,1123.45,JPY,2024-09-08,Michael Johnson
+prod14,1678.90,GBP,2024-09-03,Emily Brown
+prod5,543.21,CAD,2024-09-07,David Lee
+prod6,987.65,USD,2024-09-01,Olivia Taylor
+prod7,432.10,EUR,2024-09-06,Ethan Walker
+prod8,765.43,JPY,2024-09-09,Sophia Carter
