@@ -79,7 +79,7 @@ To simulate a remote file server during development and testing, we use Python's
 ```
   python3 -m http.server
 ```
-* Your CSV files in the csv_files_test directory are now accessible via http://localhost:8000/. For example, if you have a file named test_data.csv in this directory, it would be accessible at http://localhost:8000/test_data.csv.
+* Your CSV files in the csv_files_test directory are now accessible via ``` http://localhost:8000/ ```. For example, if you have a file named test_data.csv in this directory, it would be accessible at ``` http://localhost:8000/test_data.csv ```.
 ### 6. Start the Application
 ```
   iex -S mix
