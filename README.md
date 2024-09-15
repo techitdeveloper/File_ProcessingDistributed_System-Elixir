@@ -41,7 +41,9 @@ FileProcessor is an asynchronous and distributed application for processing CSV 
 ## 5 Fault Tolerance
 * Automatic restart of failed processes.
 * Handling of network failures and API downtime.
+* Handling of failed processed files.
 * Handling of corrupted files.
+  
 ## Setup Instructions
 ### 1. Clone the repository 
 ```
