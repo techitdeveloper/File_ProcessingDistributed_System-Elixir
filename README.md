@@ -77,7 +77,7 @@ FileProcessor is an asynchronous and distributed application for processing CSV 
 ```
   iex --name node1@127.0.0.1 -S mix
 ```
-### 2. Start first node
+### 2. Start another node
 ```
   iex --name node2@127.0.0.1 -S mix
 ```
