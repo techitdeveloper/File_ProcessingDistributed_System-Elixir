@@ -106,6 +106,7 @@ defmodule FileProcessor.CsvProcessor do
         |> Enum.take(1)
         |> List.first()
         |> Map.keys()
+        |> Enum.map(&String.downcase/1)
 
       required_columns = ["revenue", "currency", "date"]
       missing_columns = required_columns -- headers
@@ -125,12 +126,17 @@ defmodule FileProcessor.CsvProcessor do
     end
   end
 
+  defp downcase_keys(map) do
+    Map.new(map, fn {k, v} -> {String.downcase(k), v} end)
+  end
+
   defp parse_csv(file_path, _headers) do
     try do
       data =
         file_path
         |> File.stream!()
         |> CSV.decode!(headers: true)
+        |> Stream.map(&downcase_keys/1)
         |> Enum.map(&process_row/1)
 
       # |> Enum.reject(&is_nil/1)
